@@ -23,3 +23,16 @@ git config --global help.autocorrect 20
 Ref: https://ardalis.com/git-autocorrect/
 https://andy-carter.com/blog/auto-correct-git-commands
 
+## Learing goals
+
+1. Intro to Clean architecture
+2. Creating the .Net projects
+3. Project architecture
+4. dotnet CLI
+5. .Net project files
+6. Running the .Net application
+7. Entity Framework
+8. Seeding Data
+9. Code first migrations
+10. Postman
+11. Git for source control
