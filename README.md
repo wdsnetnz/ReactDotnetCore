@@ -1,4 +1,6 @@
-# Git Commands
+# Creating dotnet core application with React
+
+## Git Commands
 
 …or create a new repository on the command line
 echo "# ReactDotnetCore" >> README.md
@@ -36,3 +38,39 @@ https://andy-carter.com/blog/auto-correct-git-commands
 9. Code first migrations
 10. Postman
 11. Git for source control
+
+## Section 3 - 
+
+Walking Skeleton Part 2 - Client
+
+Learning goals
+
+> Creat-react-app
+> React project files
+> React concetpts
+> React Dev tools
+> Typescript
+> Axios
+> Semantic-ui
+
+## create react typescript app
+
+npx create-react-app client-app --use-npm --template typescript
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd client-app
+  npm start
