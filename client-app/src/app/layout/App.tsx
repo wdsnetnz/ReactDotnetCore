@@ -7,7 +7,8 @@ import ActivityDashboard from '../../features/activities/dashboard/ActivityDashb
 
 function App() {
   // pass the Activity object.
-  const [activites, setActivities] = useState<Activity[]>([]);
+  const [activities, setActivities] = useState<Activity[]>([]);
+  const [selectedActivity, setSelectedActivity] = useState<Activity | undefined>(undefined);
 
   useEffect(() => {
     // adding the interface here, Activity
@@ -17,12 +18,25 @@ function App() {
     })
   }, [])
 
+  function handleSelectActivity(id: string) {
+    setSelectedActivity(activities.find(x => x.id === id))
+  }
+
+  function handleCancelSelectActivity() {
+    setSelectedActivity(undefined);
+  }
+
   return (
     // you need to use here duv or fragment, in a nother way you can use fragment with <>
     <Fragment>
      <NavBar/>  
      <Container style={{marginTop: '7em'}}>
-        <ActivityDashboard activities={activites}/>
+        <ActivityDashboard 
+          activities={activities}
+          selectedActivity={selectedActivity}
+          selectActivity={handleSelectActivity}
+          cancelSelectActivity={handleCancelSelectActivity}
+        />
      </Container>      
                   
            
