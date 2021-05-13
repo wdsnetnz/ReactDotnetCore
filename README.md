@@ -78,3 +78,7 @@ We suggest that you begin by typing:
 ## The Clean Architeture
 
 > http://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+
+string interpolaion
+string.format
+C#  > $"{string}"
